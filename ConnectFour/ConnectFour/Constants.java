@@ -33,11 +33,10 @@ public class Constants
     public static final String BOARD_STRING = "| %s | %s | %s | %s | %s | %s | %s |";
     public static final String GET_PLAYER_NAME = "Player %s: What is your name? --> ";
     public static final String TITLE = "Thanks for playing Connect Four!";
-    public static final String GET_ROW_MOVE = "Player %s (%s): Enter the row for your next move --> ";
     public static final String GET_COL_MOVE = "Player %s (%s): Enter the column for your next move --> ";
-    public static final String INVALID_ROW_OR_COLUMN = "\nYour row and column must be an empty spot of 1 - 7\n";
-    public static final String INVALID_MOVE_ERROR = "\nRow %d column %d is not a valid move. Please try again\n";
-    public static final String PRINT_MOVE = "Player %s (%s) move to R:%d C:%d";
+    public static final String INVALID_COLUMN = "\nYour column must have an empty spot\n";
+    public static final String INVALID_MOVE_ERROR = "\nColumn %d is not a valid move. Please try again\n";
+    public static final String PRINT_MOVE = "Player %s (%s) move to column %d";
     public static final String WINNER = "%s - %s is the winner!";
     public static final String TIE_GAME = "It's a tie game!";
     public static final String START_NEW_GAME = "Start a new game (Y or N)?";
