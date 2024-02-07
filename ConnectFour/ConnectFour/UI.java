@@ -61,10 +61,12 @@ public class UI
             } catch (InputMismatchException error) {
                 printInvalidColumn();
                 System.out.println();
-                scanner.nextLine();
+                scanner.next();
             }
         }
     }
+    
+    
 
     public boolean startNewGame() {
         System.out.println(Constants.START_NEW_GAME);
@@ -79,7 +81,7 @@ public class UI
 
     public void printBoard(State state) {
         System.out.println(Constants.DIVIDER_STRING);
-        for (int row = 0; row < Constants.BOARD_SIZE; row++) {
+        for (int row = 0; row < Constants.BOARD_HEIGHT; row++) {
             System.out.printf(Constants.BOARD_STRING, getXOrO(state.getBoardCell(row, 0)), getXOrO(state.getBoardCell(row, 1)), getXOrO(state.getBoardCell(row, 2)), getXOrO(state.getBoardCell(row, 3)), getXOrO(state.getBoardCell(row, 4)), getXOrO(state.getBoardCell(row, 5)));
             System.out.println();
             System.out.println(Constants.DIVIDER_STRING);

@@ -29,7 +29,7 @@ public class State
     }
 
     public boolean isTie() {
-        for (int row=0; row<Constants.BOARD_SIZE; row++) {
+        for (int row=0; row<Constants.BOARD_HEIGHT; row++) {
             for (int col=0; col<Constants.BOARD_SIZE; col++) {
                 if (getBoardCell(row,col) == Constants.BLANK) {
                     return false;
@@ -70,9 +70,9 @@ public class State
     public void setOName(String oName) {
         this.oName = oName;
     }
-
-    public int getBoardCell(int row, int col) {
-        return this.board[row][col];
+    
+    public int getBoardCell(int col) {
+        return this.board[Constants.BOARD_HEIGHT][col];
     }
 
     public void setBoardCell(int row, int col, int value) {

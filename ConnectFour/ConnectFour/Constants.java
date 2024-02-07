@@ -1,5 +1,4 @@
 package ConnectFour;
-
 /**
  * Tic-Tac-Toe game constants
  */
@@ -7,6 +6,7 @@ package ConnectFour;
 public class Constants
 {
     // Valid board size
+    public static final int BOARD_HEIGHT = 6;
     public static final int BOARD_SIZE = 7;
 
     // Valid board values
