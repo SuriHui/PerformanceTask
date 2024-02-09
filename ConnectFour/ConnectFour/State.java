@@ -71,8 +71,8 @@ public class State
         this.oName = oName;
     }
     
-    public int getBoardCell(int col) {
-        return this.board[Constants.BOARD_HEIGHT][col];
+    public int getBoardCell(int col, int row) {
+        return this.board[row][col];
     }
 
     public void setBoardCell(int row, int col, int value) {
