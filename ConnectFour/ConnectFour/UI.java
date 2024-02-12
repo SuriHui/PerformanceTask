@@ -6,9 +6,7 @@ import java.util.InputMismatchException;
  */
 public class UI
 {
-
     Scanner scanner;
-
     public UI() {
         scanner = new Scanner(System.in);         
     }
@@ -65,8 +63,6 @@ public class UI
             }
         }
     }
-    
-    
 
     public boolean startNewGame() {
         System.out.println(Constants.START_NEW_GAME);

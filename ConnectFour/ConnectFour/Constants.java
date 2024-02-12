@@ -34,7 +34,7 @@ public class Constants
     public static final String GET_PLAYER_NAME = "Player %s: What is your name? --> ";
     public static final String TITLE = "Thanks for playing Connect Four!";
     public static final String GET_COL_MOVE = "Player %s (%s): Enter the column for your next move --> ";
-    public static final String INVALID_COLUMN = "\nYour column must have an empty spot\n";
+    public static final String INVALID_COLUMN = "\nYour column must have a(n) empty spot(s)\n";
     public static final String INVALID_MOVE_ERROR = "\nColumn %d is not a valid move. Please try again\n";
     public static final String PRINT_MOVE = "Player %s (%s) move to column %d";
     public static final String WINNER = "%s - %s is the winner!";
