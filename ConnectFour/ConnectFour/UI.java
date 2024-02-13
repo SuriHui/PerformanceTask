@@ -88,12 +88,12 @@ public class UI
         System.out.printf(Constants.INVALID_COLUMN);
     }
 
-    public void printInvalidMove(int row, int col) {
-        System.out.printf(Constants.INVALID_MOVE_ERROR, row, col);
+    public void printInvalidMove(int col) {
+        System.out.printf(Constants.INVALID_MOVE_ERROR, col);
     }
 
-    public void printMove(State state, int row, int col) {
-        System.out.printf(Constants.PRINT_MOVE, getXOrO(state.getWhoseMove()),getPlayerName(state.getWhoseMove(), state.getXName(), state.getOName()), row, col);
+    public void printMove(State state, int col) {
+        System.out.printf(Constants.PRINT_MOVE, getXOrO(state.getWhoseMove()),getPlayerName(state.getWhoseMove(), state.getXName(), state.getOName()), col);
         System.out.println(); 
     } 
 
