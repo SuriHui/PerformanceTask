@@ -1,5 +1,4 @@
 package ConnectFour;
-
 public class EventLoop {
 
   // Instance variables for the UI and State classes
