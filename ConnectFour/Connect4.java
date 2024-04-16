@@ -2,7 +2,7 @@ public class Connect4
 {
     State state = new State();
     UI ui = new UI();
-    int row, col;
+    int row, col, board;
 
     public static void main(String[] args) {
         Connect4 eventLoop = new Connect4();
@@ -48,6 +48,7 @@ public class Connect4
             } else if (gameState == Constants.MAKE_MOVE) {
                 ui.printMove(state, col);
                 state.setBoardCell(row-1, col-1, state.getWhoseMove());
+                state.validate(row, col, board);
                 state.setGameState(Constants.CHECK_IF_WINNER);
 
             } else if (gameState == Constants.CHECK_IF_WINNER) {

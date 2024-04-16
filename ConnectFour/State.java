@@ -73,4 +73,16 @@ public class State
     public void setBoardCell(int row, int col, int value) {
         this.board[row][col] = value;
     }
+    
+    public static boolean validate(int col, int board, int row) {
+        // check valid column
+        if (col < 0 || col > Constants.BOARD_HEIGHT) {
+            return false;
+        }
+        //check full column
+        if (board != 0) {
+            return false;
+        }
+        return true;
+    }
 }
