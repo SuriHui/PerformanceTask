@@ -74,6 +74,7 @@ public class State
         this.board[row][col] = value;
     }
     
+    // https://gist.github.com/jonathan-irvin/97537512eb65a8bbcb9a
     public static boolean validate(int col, int board, int row) {
         // check valid column
         if (col < 0 || col > Constants.BOARD_HEIGHT) {
